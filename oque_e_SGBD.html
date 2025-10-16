@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Oque é SGBD</title>
+      <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        section{
+            margin-top: 50px;
+            display: grid;
+            justify-items: center;
+            text-align: justify;
+            gap: 10px;
+            padding: 20px;
+            line-height: 1.5;
+            font-size: 17px;
+
+        }
+        span {
+            color:  rgb(191, 5, 5);
+            font-weight: bold;
+        }
+
+        .header {
+            width: 100%;
+            height: 50px;
+            background-color: #606060;
+            padding: 10px;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            margin-bottom: 20px;
+            font-weight: bold;
+
+        }
+
+        .header a:hover {
+		text-decoration: underline;
+		transform: translateY(-3px);
+		color: var(--accent-color);
+        color :white;
+        }
+
+        a{
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+
+        p{
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        footer{
+            margin-top: 50px;
+            height: 88px;
+            background-color: #606060;
+            display: grid;
+            justify-items: center;
+            align-items: center;
+            color: white;
+        }
+
+        .oque_e_SGBD{
+            padding: 0 15px;
+            text-align: justify;
+            font-size: 17px;
+            line-height: 1.5;
+            padding-left: 181px;
+            padding-right: 181px;
+            
+        }
+
+        .image{
+            display: grid;
+            justify-items: center;
+            align-items: center;
+            width: 250px;
+            height: 250px;
+            margin-left: auto;
+            margin-right: auto; 
+            border-radius: 50%;
+            overflow: hidden;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .image :hover{
+            transform: scale(1.1);
+            transition: transform 0.3s ease;
+        }
+    </style> 
+</head>
+<body>
+
+    
+    <header>
+        <div class="header">
+            <a href="oque_e_SGBD.html">Home</a>
+            <a href="exemplos.html">Exemplos</a>
+            <a href="tipos.html">Tipos</a>
+            <a href="funcoes.html">Funções</a>
+            <a href="caracteristicas.html">Caracteristicas</a>
+        </div>
+    </header>
+    
+    
+<!-- Oque é e para que serve um SGBD -->
+    <section>
+        <h2>O que é um SGBD e para que serve?</h2>
+        <div class="oque_e_SGBD">
+            Um <span>SGBD (Sistema Gerenciador de Banco de Dados)</span> é um software responsável por criar, organizar, controlar e gerenciar o acesso a um banco de dados. Ele atua como um intermediário entre o usuário ou aplicativo e os dados armazenados, garantindo que as informações sejam mantidas de forma segura, consistente e acessível. Por meio do SGBD, é possível inserir, alterar, excluir e consultar dados, além de realizar tarefas como controle de segurança, integridade das informações, backup e recuperação em caso de falhas. Exemplos comuns de SGBDs incluem o <span>MySQL</span>, <span>PostgreSQL</span>, <span>Oracle</span> e <span>SQL Server</span>, amplamente utilizados em sistemas que precisam armazenar e manipular grandes volumes de informações de maneira confiável e eficiente.
+        </div>
+    </section>
+
+    <div class="image">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTNrOOxOr7_tlE80tYAO1RfL2UND1w9pnzjlQ&s" alt="Imagem ilustrativa de um SGBD">
+    </div>
+    
+
+    <footer>
+        <div>
+            <p>&copy; Feito e projetado exclusivamente por Leonardo Pinho e Caio Mega</p>
+        </div>
+    </footer>
+
+</body>
+</html>

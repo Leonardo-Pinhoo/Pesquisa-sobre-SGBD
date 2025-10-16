@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> SGBD Racional e Não Racional</title>
+</head>
+
+<body class="tipos-page">
+
+    <header>
+        <div class="header">
+            <a href="oque_e_SGBD.html">Home</a>
+            <a href="exemplos.html">Exemplos</a>
+            <a href="tipos.html">Tipos</a>
+            <a href="funcoes.html">Funções</a>
+            <a href="caracteristicas.html">Caracteristicas</a>
+        </div>
+    </header>
+
+
+    <div class="page-container">
+        <h1>Tipos de SGBD</h1>
+        <h2>SGBD Relacional</h2>
+        <p>Um SGBD relacional é um sistema de gerenciamento de banco de dados que armazena dados em tabelas (ou
+            relações) compostas por linhas e colunas. Cada linha representa um registro, e cada coluna representa um
+            atributo do registro. O modelo relacional é baseado na teoria dos conjuntos e na álgebra relacional,
+            permitindo operações como seleção, projeção, junção e união para manipular os dados.</p>
+        <p>Exemplos populares de SGBDs relacionais incluem MySQL, PostgreSQL, Oracle Database e Microsoft SQL Server.
+        </p>
+    </div>
+
+        <div class="naoracional">
+            <h2>SGBD Não Relacional (NoSQL)</h2>
+            <p>Um SGBD não relacional, também conhecido como NoSQL (Not Only SQL), é um sistema de gerenciamento de
+                banco de
+                dados que não utiliza o modelo relacional tradicional. Em vez disso, ele pode armazenar dados em
+                formatos
+                variados, como documentos, grafos, colunas ou pares chave-valor. Os SGBDs NoSQL são projetados para
+                lidar
+                com grandes volumes de dados, alta escalabilidade e flexibilidade na estrutura dos dados.</p>
+            <p>Exemplos populares de SGBDs NoSQL incluem MongoDB (documento), Cassandra (coluna), Redis (chave-valor) e
+                Neo4j (grafo).</p>
+
+        </div>
+
+     <footer>
+        <div>
+            <p>&copy; Feito e projetado exclusivamente por Leonardo Pinho e Caio Mega</p>
+        </div>
+    </footer>
+    
+</body>
+
+</html>
+
+<style>
+	:root{
+		--card-bg: #fff;
+		--card-shadow: rgba(0,0,0,0.08);
+		--card-shadow-hover: rgba(0,0,0,0.18);
+		--accent-color: gray;
+		--overlay-color: linear-gradient(135deg, rgba(43,140,255,0.06), rgba(98,0,238,0.03));
+	}
+
+	* {
+		margin: 0;
+		padding: 0;
+		box-sizing: border-box;
+		font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+	}
+	.tipos-page {
+		font-family: Arial, sans-serif;
+		line-height: 1.6;
+	}
+
+	h1,
+	h2 {
+		color: #333;
+		transition: color .18s ease, transform .18s ease;
+	}
+
+	p {
+		margin-bottom: 15px;
+	}
+
+	.header {
+		background-color: #f4f4f4;
+		padding: 10px 0;
+		text-align: center;
+		margin-bottom: 20px;
+	}
+
+	.header a {
+		margin: 0 15px;
+		text-decoration: none;
+		color: #333;
+		font-weight: bold;
+		transition: transform .18s ease, color .18s ease;
+		display: inline-block;
+	}
+	.header a:hover {
+		text-decoration: underline;
+		transform: translateY(-3px);
+		color: var(--accent-color);
+	}
+
+	.page-container,
+	.naoracional {
+		position: relative;
+		overflow: hidden; 
+		max-width: 800px;
+		margin: auto;
+		padding: 20px;
+		background-color: var(--card-bg);
+		box-shadow: 0 6px 18px var(--card-shadow);
+		transition: transform .28s cubic-bezier(.2,.9,.2,1), box-shadow .28s ease, background-color .25s ease;
+		border-radius: 10px;
+		will-change: transform, box-shadow;
+		backface-visibility: hidden;
+	}
+
+	.page-container::before,
+	.naoracional::before {
+		content: "";
+		position: absolute;
+		inset: 0;
+		pointer-events: none;
+		background: var(--overlay-color);
+		opacity: 0;
+		transform: scale(1.02);
+		transition: opacity .28s ease, transform .4s cubic-bezier(.2,.9,.2,1);
+	}
+
+	.page-container:hover,
+	.naoracional:hover {
+		transform: translateY(-6px) scale(1.01);
+		box-shadow: 0 22px 44px var(--card-shadow-hover);
+		background-color: #fbfbfe;
+	}
+
+	.page-container:hover::before,
+	.naoracional:hover::before {
+		opacity: 1;
+		transform: scale(1);
+	}
+
+	.page-container:hover h2,
+	.naoracional:hover h2 {
+		color: var(--accent-color);
+		transform: translateX(3px);
+	}
+
+	.naoracional {
+		margin: 20px auto 0;
+	}
+
+	footer {
+		background-color: #f4f4f4;
+		text-align: center;
+		padding: 10px 0;
+		margin-top: 20px;
+		transition: background-color .2s ease;
+	}
+	footer:hover {
+		background-color: #f2f2f2;
+	}
+
+	@media (prefers-reduced-motion: reduce) {
+		* {
+			transition: none !important;
+			animation: none !important;
+		}
+		.page-container::before,
+		.naoracional::before {
+			opacity: 0; 
+		}
+	}
+</style>

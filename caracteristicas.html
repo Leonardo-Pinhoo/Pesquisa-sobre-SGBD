@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<div class="topo">
+    <header>
+        <div class="header">
+            <a href="oque_e_SGBD.html">Home</a>
+            <a href="exemplos.html">Exemplos</a>
+            <a href="tipos.html">Tipos</a>
+            <a href="funcoes.html">Funções</a>
+            <a href="caracteristicas.html">Caracteristicas</a>
+        </div>
+    </header>
+
+    </div>
+
+    <div class="container-caracteristicas">
+        <h2>Caracteristicas</h2>
+        <p>Os Sistemas de Gerenciamento de Banco de Dados (SGBDs) possuem diversas características que os tornam essenciais para a gestão eficiente de dados em organizações. Algumas das principais características dos SGBDs incluem:</p>     
+        
+    </div>
+    </div>
+    <div class="caracteristicas">
+    <div class="caracteristicas">
+        <ul>
+            <li>1. <strong>Independência de Dados:</strong> Os SGBDs fornecem uma camada de abstração entre os dados e as aplicações, permitindo que as mudanças na estrutura dos dados não afetem diretamente as aplicações que os utilizam.</li>
+            <li>2. <strong>Suporte a Múltiplos Usuários:</strong> Permitem que vários usuários acessem e manipulem os dados simultaneamente, garantindo a integridade e consistência dos dados.</li>
+            <li>3. <strong>Linguagem de Consulta:</strong> Utilizam linguagens específicas, como SQL (Structured Query Language), para definir, manipular e consultar os dados armazenados no banco de dados.</li>
+            <li>4. <strong>Controle de Acesso:</strong> Implementam mecanismos de segurança para controlar o acesso aos dados, garantindo que apenas usuários autorizados possam realizar operações específicas.</li>
+            <li>5. <strong>Recuperação de Dados:</strong> Oferecem funcionalidades para backup e recuperação de dados em caso de falhas, garantindo a continuidade das operações.</li>
+            <li>6. <strong>Integridade dos Dados:</strong> Aplicam regras e restrições para garantir a precisão e consistência dos dados armazenados no banco de dados.</li>
+            <li>7. <strong>Transações:</strong> Suportam o conceito de transações, permitindo que um conjunto de operações seja executado como uma única unidade lógica, garantindo que todas as operações sejam concluídas com sucesso ou nenhuma delas seja aplicada.</li>
+            <li>8. <strong>Modelagem de Dados:</strong> Utilizam modelos conceituais, como o modelo relacional, para representar a estrutura dos dados e suas inter-relações.</li>
+        </ul>
+
+    </div>
+
+    
+
+    <footer>
+        <aside
+            <p>&copy; Feito e projetado exclusivamente por Leonardo Pinho e Caio Mega</p>
+        </aside>
+</body>
+</html>
+
+<style>
+html, body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f3f4f6;
+    color: #333;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+    padding: 40px 16px;
+}
+
+.topo {
+    width: 100%;
+    max-width: 960px;
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.topo h1 {
+    margin: 0;
+    font-size: 1.4rem;
+    color: #111;
+}
+
+.container-caracteristicas,
+.caracteristicas {
+    width: 100%;
+    max-width: 960px;
+    background: #ffffff;
+    padding: 16px;
+    border-radius: 8px;
+    transition: transform 0.18s ease, box-shadow 0.18s ease;
+    box-shadow: 0 6px 16px rgba(0,0,0,0.05);
+}
+
+.container-caracteristicas:hover,
+.caracteristicas:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 28px rgba(0,0,0,0.08);
+}
+
+.container-caracteristicas h2 {
+    margin: 0 0 8px 0;
+    font-size: 1.1rem;
+}
+
+.container-caracteristicas p {
+    margin: 0;
+    color: #666;
+    line-height: 1.5;
+}
+
+.caracteristicas ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.caracteristicas li {
+    padding: 10px 6px;
+    border-bottom: 1px solid #eee;
+    color: #333;
+    transition: background 0.14s ease, transform 0.14s ease;
+}
+
+.caracteristicas li:hover {
+    background: #fbfdff;
+    transform: translateX(4px);
+}
+
+footer div p {
+    margin: 0;
+    padding: 12px 0;
+    color: #666;
+    font-size: 0.9rem;
+}
+
+@media (max-width: 560px) {
+    .topo, .container-caracteristicas, .caracteristicas {
+        padding: 12px;
+        border-radius: 6px;
+    }
+    .topo h1 { font-size: 1.2rem; }
+}
+</style>

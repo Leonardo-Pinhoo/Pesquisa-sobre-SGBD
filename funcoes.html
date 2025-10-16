@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Funções do SGBD</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        section{
+            margin-top: 50px;
+            display: grid;
+            justify-items: center;
+            text-align: justify;
+            gap: 10px;
+            padding: 20px;
+            line-height: 1.5;
+            font-size: 17px;
+
+        }
+        span {
+            color:  rgb(191, 5, 5);
+            font-weight: bold;
+        }
+
+        .header {
+            width: 100%;
+            height: 50px;
+            background-color: #606060;
+            padding: 10px;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            margin-bottom: 20px;
+            font-weight: bold;
+
+        }
+
+        .header a:hover {
+		text-decoration: underline;
+		transform: translateY(-3px);
+		color: var(--accent-color);
+        color: white;
+	}
+
+        
+        a{
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        ul{
+            list-style: inside;
+            padding-left: 200px;
+            padding-right: 180px;
+        }
+
+        p{
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        footer{
+            margin-top: 50px;
+            height: 104px;
+            background-color: #606060;
+            display: grid;
+            justify-items: center;
+            align-items: center;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    
+    <header>
+        <div class="header">
+            <a href="oque_e_SGBD.html">Home</a>
+            <a href="exemplos.html">Exemplos</a>
+            <a href="tipos.html">Tipos</a>
+            <a href="funcoes.html">Funções</a>
+            <a href="caracteristicas.html">Caracteristicas</a>
+
+        </div>
+    </header>
+    
+    <!-- Funções principais de um SGBD -->
+
+    <section>
+        <h2>Quais são as principais funções de um SGBD</h2>
+        <p>As principais funções de um Sistema Gerenciador de Banco de Dados (SGBD) incluem:</p>
+        <ul>
+            <li><span>Definição de Dados:</span> Permite a criação e definição da estrutura do banco de dados, incluindo tabelas, campos, tipos de dados e relacionamentos.</li>
+            <li><span>Manipulação de Dados:</span> Facilita a inserção, atualização, exclusão e consulta de dados por meio de linguagens específicas, como <span>SQL</span>.</li>
+            <li><span>Controle de Acesso:</span> Garante a segurança dos dados, permitindo que apenas usuários autorizados possam acessar ou modificar informações sensíveis.</li>
+            <li><span>Integridade dos Dados:</span> Assegura que os dados sejam precisos e consistentes, aplicando regras e restrições para evitar entradas inválidas ou duplicadas.</li>
+            <li><span>Backup e Recuperação:</span> Oferece mecanismos para realizar backups regulares dos dados e restaurá-los em caso de falhas ou perdas.</li>
+            <li><span>Gerenciamento de Transações:</span> Controla operações múltiplas para garantir que sejam concluídas com sucesso ou revertidas em caso de erro, mantendo a integridade do banco de dados.</li>
+            <li><span>Desempenho e Otimização:</span> Monitora e otimiza o desempenho do banco de dados, ajustando consultas e índices para melhorar a eficiência.</li>
+            <li><span>Suporte a Múltiplos Usuários:</span> Permite que vários usuários acessem e manipulem o banco de dados simultaneamente, gerenciando conflitos e garantindo a consistência dos dados.</li>
+        </ul>
+        
+
+    </section>
+
+    <footer>
+        <div>
+            <p>&copy; Feito e projetado exclusivamente por Leonardo Pinho e Caio Mega</p>
+        </div>
+    </footer>
+    
+</body>
+</html>
